@@ -1,0 +1,12 @@
+---
+
+docker_repo: docker-ce.repo
+
+# Docker user
+docker_user: workstation
+
+# DOCKER RANCHER
+security_service_name: rancher
+security_serivce_tag: v2.7-head
+security_service_container_name: rancher/rancher
+security_service_dockerfile_path: docker/rancher/

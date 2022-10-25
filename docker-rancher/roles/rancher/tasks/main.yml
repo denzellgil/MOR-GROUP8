@@ -1,0 +1,14 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+    - name: Install Rancher for Ubuntu
+      apt:
+        name: docker pull rancher/rancher:v2.7-head
+      when: ansible_distribution == "Ubuntu
+
+
+
+# task file for rancher
